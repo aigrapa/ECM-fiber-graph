@@ -78,7 +78,7 @@ clc;
 clear global;
 
 if ~isdeployed
-    addpath(genpath('Codes'));
+    addpath(genpath('code'));
     addpath(genpath('sample_img'));
     addpath(genpath('stats'));
 end
