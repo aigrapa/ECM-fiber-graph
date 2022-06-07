@@ -19,8 +19,9 @@ After downloading the project, the user can run the GUI (ECM_fiber_graph.fig) to
 
 We recommend testing on one/few samples visualizing the intermediate steps (e.g. Fiber extraction pipeline, followed by Fiber features and parametric maps), before deciding to apply the whole analysis on groups of images with Batch processing.
 
+[For further information, please consult the tutorial.](https://github.com/aigrapa/ECM-fiber-graph/blob/main/Tutorial_ECM-fiber-graph.pdf)
 
 ![Graphical user interface, application Description automatically
 generated](./readme_images//media/image1.png)
 
-[For further information, please consult the tutorial.](https://github.com/aigrapa/ECM-fiber-graph/blob/main/Tutorial_ECM-fiber-graph.pdf)
+
