@@ -11,7 +11,7 @@ The pipeline including Gabor detection, graph-based fiber representation and par
 
 **Requirements**: The current app version can only be run on machines with MATLAB installed, starting from 2015a onwards. Future work can include the development of a standalone application that would not require prior installation of MATLAB.
 
-Files should typically be stored for analysis in the following formats: ‘jpg/jpeg’, ‘tif’, ‘png’, etc.
+Files should typically be stored for analysis in the following formats: ‘.jpg/jpeg’, ‘.tif’, ‘.png’, etc.
 
 **Additional info**: Most tests have been performed on average sample size smaller or equal to 1024x1024 pixels. Skeleton Reconnection is a time-consuming step which is deemed optional. 
 
