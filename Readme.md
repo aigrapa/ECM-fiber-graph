@@ -1,6 +1,13 @@
 ECM-fiber-graph MATLAB GUI
+=====================
 
-The pipeline including Gabor detection, graph-based fiber representation and parametric maps analysis can be tested through a MATLAB-based graphical user interface (GUI), (Figure 1), which can run on MATLAB versions starting from 2015a onwards. 
+## Description
+
+The ECM-fiber-graph MATLAB GUI is able to test Gabor detection, graph-based fiber representation and parametric maps analysis.
+
+## Documentation
+
+The pipeline runs using a MATLAB-based graphical user interface (GUI), (Figure 1), which can run on MATLAB versions starting from 2015a onwards. 
 
 The current app version can only be run on machines with MATLAB installed. Next steps can include the development of a standalone application that would not require prior installation of MATLAB.
 Files should typically be stored for analysis in the following formats: ‘jpg/jpeg’, ‘tif’, ‘png’, etc. 
@@ -14,4 +21,4 @@ We recommend testing on one/few samples visualizing the intermediate steps (e.g.
 ![Graphical user interface, application Description automatically
 generated](./readme_images//media/image1.png)
 
-For further information, please see attached tutorial.
+[For further information, please consult the tutorial.](https://github.com/aigrapa/ECM-fiber-graph/blob/main/Tutorial_ECM-fiber-graph.pdf)
