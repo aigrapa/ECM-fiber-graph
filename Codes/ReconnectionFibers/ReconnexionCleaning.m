@@ -1,4 +1,6 @@
 function [ExtremNode, skel2] = ReconnexionCleaning(pgmFileName,draw_graph, ThreshOnSkeletonLengthBranch, AllConnected)
+
+
 [x_length, y_length] = size(AllConnected);
 %ExtremNode = cell(ConnectedComponentsNr,1);
 ExtremNode = cell(1,1);
@@ -44,9 +46,9 @@ g=struct('node',{node},'link',{link});
     
 
 ExtremNode{k}=[];
-if draw_graph
+%if draw_graph
     fig = figure;hold on;
-end
+%end
 for i=1:length(node)
 
     if(g.node(i).ep==1)   %%%%%%%%%%%%%%%%%%%%%%if the node is an endpoint
@@ -59,7 +61,7 @@ for i=1:length(node)
     X1 = g.node(i).comx;
     Y1 = g.node(i).comy;
 
-    if draw_graph
+    %if draw_graph
 
         if (g.node(i).ep ==1)
             ncol = 'r';
@@ -93,10 +95,10 @@ for i=1:length(node)
        plot(Y1,X1,'o','Markersize',5,...
             'MarkerFaceColor',ncol,...
             'Color','k');axis([1 x_length 1 y_length]);   
-    end
+    %end
 end
 
-if draw_graph
+%if draw_graph
     set(gcf,'Color','white');
    axis([1 x_length 1 y_length]);
    axis ('square'); axis off;
@@ -104,11 +106,19 @@ if draw_graph
    %set(h, 'Ydir', 'reverse');
     drawnow;
     title('Graph representation for the skeleton after reconnexion')
-    save_dir = './stats/img/';  
+   
+    hold off;
+%end
+    
+    save_dir = './stats/img/';
     save_namefile = [fullfile(save_dir, pgmFileName, 'Reconnected_Morphological_skeleton_graph.png')];
     export_fig(fig,save_namefile);
-    hold off;
-end
+    if draw_graph == 0
+     fig.Visible = 'off';
+    end
+    
+    
+
 
 
 end

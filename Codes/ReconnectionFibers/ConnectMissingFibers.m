@@ -26,7 +26,7 @@ AllConnected = ReconnectedFibers + SkeletonMaxGabor;
 AllConnected(AllConnected >0) = 1;
 AllConnected = logical(AllConnected);
 %[~, FinalSkeleton] = ReconnexionCleaning(draw_graph, ThreshOnSkeletonLengthBranch, AllConnected);
-[g, FinalSkeleton] = ReconnexionCleaning(pgmFileName,1, ThreshOnSkeletonLengthBranch, AllConnected);
+[g, FinalSkeleton] = ReconnexionCleaning(pgmFileName,draw_graph, ThreshOnSkeletonLengthBranch, AllConnected);
 
 
 end
